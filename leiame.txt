@@ -1,0 +1,24 @@
+#########################################
+
+	Computação Gráfica 
+	
+	Prof. Marcel Jackowski
+	
+	
+	EP1 
+	
+	Danilo Aleixo Gomes de Souza
+	n USP: 7972370
+	
+	Leonardo da Silva Rebelo
+	n USP: 5897894
+	
+########################################
+
+
+Como usar:
+
+O arquivo principal é o ep1.html
+O jogo em formato PGN é lido pelo programa através do arquivo teste.pgn
+
+	

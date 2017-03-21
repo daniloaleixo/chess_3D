@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+
+		<meta charset="utf-8">
+		<title>Xadrez</title>
+
+		<script id="vertex-shader" type="x-shader/x-vertex">
+
+			attribute  vec4 vPosition;
+
+			uniform mat4 modelMatrix;
+			uniform mat4 viewMatrix;
+			uniform mat4 projectionMatrix;
+
+			void main() 
+			{
+			    gl_Position = projectionMatrix*viewMatrix*modelMatrix*vPosition;
+			} 
+		</script>
+
+		<script id="fragment-shader" type="x-shader/x-fragment">
+
+			precision mediump float;
+
+			uniform vec4 fColor;
+
+			void main()
+			{
+			    gl_FragColor = fColor;
+			}
+		</script>
+
+
+		<div>
+		<button id="Button1" style="z-index: 4; overflow: auto; position: absolute;">
+   			 Pausar/Continuar
+   		</div>
+   		"diass
+   		fasfds"
+   		<div>
+   		<button id="Button2" style="z-index: 6; overflow: auto; position: absolute;">
+   			 Trocar Projeção
+   		</div>
+
+		<script type="text/javascript" src="Common/webgl-utils.js"></script>
+		<script type="text/javascript" src="Common/initShaders.js"></script>
+		<script type="text/javascript" src="Common/MV.js"></script>
+		<script type="text/javascript" src="parser.js"></script>
+		<script type="text/javascript" src="matrixOps.js"></script>
+		<script type="text/javascript" src="ep1.js"></script>
+		<script type="text/javascript" src="pgnReader.js"></script>
+
+		<style>
+	      body {
+	      	background-color: #262626;
+	        margin: 0px;
+	        overflow: hidden;
+	      }
+	    </style>
+	</head>
+	<body>
+		<canvas id="gl-canvas"
+			width="1301px"
+			height="678px">	
+		</canvas>
+
+	</body>
+</html>
